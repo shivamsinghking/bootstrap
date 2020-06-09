@@ -7,11 +7,44 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!-- Optional JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+  .navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #000;
+
+    /* the rest of your styling */
+}
+.carousel{
+width:960px;
+}
+
+    @media only screen and (max-width: 600px) {
+      .carousel{
+        width:100%;
+      }
+    }
+    @media (min-width: 768px) {
+      .carousel{
+        width:100%;
+      }
+     }
+    
+    @media (min-width: 992px) { 
+      .carousel{
+        width:100%;
+      }
+     }
+    
+    @media (min-width: 1200px) {
+    }
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-3">
@@ -40,13 +73,13 @@
       </div>
     </nav>
  <!-- <--image slider-->
-  <div class="container-fluid">
+  <div class="container">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 img-fluid" src="./assets/bg1.jpg"  alt="First slide">
+        <img class="d-block w-100 img-fluid" src="./assets/bg4.jpg" height="50" width="300"  alt="First slide">
         <div class="carousel-caption d-none d-md-block">
-          <h1>Bootsrap</h1>
+          <h1>Boottrap</h1>
           <p>Get Strated with Bootstrap</p>
         </div>
       </div>
@@ -54,7 +87,7 @@
         <img class="d-block w-100 img-fluid" src="./assets/bg2.jpg"  alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 img-fluid" src="./assets/bg3.jpg"  alt="Third slide">
+        <img class="d-block w-100 img-fluid" src="./assets/bg5.jpg"  alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -66,8 +99,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
 </div>
-
+<!--jumbotron-->
+<div class="jumbotron mx-3 my-3 p-3">
+  <h1 class="display-6"><b>Web Hosting</b></h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-3">
+  <p class="lead">
+    <a class="btn btn-primary btn-sm px-3" href="#" role="button"><i>Learn more</i></a>
+  </p>
+</div>
   </body>
 </html>
