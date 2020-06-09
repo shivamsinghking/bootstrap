@@ -29,20 +29,35 @@ width:960px;
       .carousel{
         width:100%;
       }
+      .card{
+        width: 100%;
+      } 
     }
     @media (min-width: 768px) {
       .carousel{
         width:100%;
       }
+      .card {
+       
+         border: none;
+         box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+       }
+      
      }
     
     @media (min-width: 992px) { 
       .carousel{
         width:100%;
       }
+     
      }
     
     @media (min-width: 1200px) {
+      .card {
+        width:70%;
+         border: none;
+         box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+       }
     }
   </style>
   </head>
@@ -101,13 +116,111 @@ width:960px;
   </div>
 </div>
 <!--jumbotron-->
-<div class="jumbotron mx-3 my-3 p-3">
+<div class="jumbotron mx-3 md-3 p-3">
   <h1 class="display-6"><b>Web Hosting</b></h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-3">
   <p class="lead">
     <a class="btn btn-primary btn-sm px-3" href="#" role="button"><i>Learn more</i></a>
   </p>
+</div>
+<!-- weclome section -->
+<div class="container-fluid p-3">
+  <div class="row weclome text-center">
+    <div class="col">
+      <h1 class="display-4">Build With Ease</h1><hr class="w-75">
+      <p class="lead">This is my first Bootstrap project working with Bootstrap-4, and in the way of getting the expertise.</p>
+    </div>
+   
+  </div>
+</div>
+
+<!--Column section -->
+<div class="container-fluid">
+  <div class="row p-3 text-center">
+    <div class="col-sm-6 col-xm-12 col-md-4">
+      <i class="fa fa-html5" aria-hidden="true" style="font-size: 9vw; color:red"></i>
+      <h1 class="display-6"><b>HTML-5</b></h1>
+     <p class="lead">Build web pages with HTML, HTML-5</p>
+    </div>
+    <div class="col-sm-6 col-xm-12 col-md-4">
+      <i class="fa fa-bold" aria-hidden="true"  style="font-size: 9vw;color:purple"></i>
+      <h1 class="display-6"><b>BOOTSTRAP-4</b></h1>
+     <p class="lead">Design web responsive pages with Bootstrap-4</p>
+    </div>
+    <div class="col-sm-12  col-md-4">
+      <i class="fa fa-css3" aria-hidden="true"  style="font-size: 9vw; color:blue;"></i>
+      <h1 class="display-6"><b>CSS-3</b></h1>
+     <p class="lead">Design web pages with css-3</p>
+    </div>
+  </div>
+</div>
+
+<!--two column-->
+<div class="container-fluid p-3 my-3">
+  <div class="row padding">
+    <div class="col-lg-6">
+      <h2>If we build it...</h2>
+      <p><b>HTML</b> First developed by Tim Berners-Lee in 1990, HTML is short for Hypertext Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks.</p>
+      <p><b>CSS</b> is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+      <p><b>Bootstrap</b> 4 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. Bootstrap 4 is completely free to download and use!</p>
+      <p class="lead">
+        <a class="btn btn-warning btn-sm px-3" href="#" role="button"><b>Learn more</b></a>
+      </p>
+    </div>
+
+    <div class="col-lg-6">
+      <img src="./assets/desk.jpg" alt="desk" style="object-fit: cover;width:100%;height: 400px;">
+    </div>
+  </div>
+</div>
+<!-- Meet the team-->
+<div class="container-fluid">
+<div class="row welcome text-center">
+  <div class="col-12">
+    <h1 class="display-4">Meet The Team</h1><hr class="w-75" style="border:1px solid#000">
+  </div>
+</div>  
+</div>
+<!--cards-->
+<div class="container-fluid padding">
+<div class="row p-3 mx-5">
+  <div class=" col-md-4 my-3 " >
+    <div class="card">
+      <img class="card-img-top" src="./assets/e4.png" alt="Card image cap" >
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-md-4 my-3" >
+    <div class="card">
+      <img class="card-img-top" src="./assets/e4.png" alt="Card image cap" >
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-md-4 my-3" >
+    <div class="card">
+      <img class="card-img-top" src="./assets/e4.png" alt="Card image cap" >
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+
 </div>
   </body>
 </html>
